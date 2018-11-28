@@ -89,6 +89,14 @@ logoutButton.onclick = function(){
   loginForm.style.display = "block";
 }
 
+var backLogoutButton = document.querySelector("#back-to-login-button");
+backLogoutButton.onclick = function(){
+  newForm.style.display = "none";
+  editForm.style.display = "none";
+  createUserForm.style.display = "none";
+  loginForm.style.display = "block";
+}
+
 function createUser(fname, lname, email, password){
   var someData = `fname=${encodeURIComponent(fname)}`;
   someData += `&lname=${encodeURIComponent(lname)}`;

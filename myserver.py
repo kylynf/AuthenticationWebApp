@@ -131,6 +131,10 @@ class MyAwesomeHandler(BaseHTTPRequestHandler):
             #alert("Please register")
             
     def handleRecipeCreate(self):
+        if "userID" not in self.session:
+            self.handle401()
+            return
+
         length = self.headers["Content-length"]
         #ready body data from client
         body = self.rfile.read(int(length)).decode("utf-8")
@@ -206,6 +210,10 @@ class MyAwesomeHandler(BaseHTTPRequestHandler):
                 self.handle401()
 
     def handleRecipeRetrieve(self, recipe_id):
+        if "userID" not in self.session:
+            self.handle401()
+            return
+
         db = RecipesDB()
         recipe = db.getRecipe(recipe_id)
         print("testing", recipe)
@@ -219,6 +227,10 @@ class MyAwesomeHandler(BaseHTTPRequestHandler):
             self.wfile.write(bytes (myjson, "utf-8"))
 
     def handleRecipeDelete(self, recipe_id):
+        if "userID" not in self.session:
+            self.handle401()
+            return
+
         db = RecipesDB()
         recipe = db.getRecipe(recipe_id)
         print("testing delete", recipe_id)
@@ -231,6 +243,10 @@ class MyAwesomeHandler(BaseHTTPRequestHandler):
             self.wfile.write(bytes("<h1> Recipe Deleted</h1>", "utf-8"))
 
     def handleRecipeReplace(self, recipe_id):
+        if "userID" not in self.session:
+            self.handle401()
+            return
+            
         db = RecipesDB()
         recipe = db.getRecipe(recipe_id)
         print("testing replace", recipe_id)

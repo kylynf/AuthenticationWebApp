@@ -14,7 +14,7 @@ body{
   transform: translate(-50%, -50%);
 }
 
-#add-button, #login-button, #create-account-button, #add-created-account, #back-button, #logout-button{
+#add-button, #login-button, #create-account-button, #add-created-account, #back-button, #logout-button, #back-to-login-button{
   background-color: #000000;
   border: none;
   color: white;
@@ -30,10 +30,13 @@ body{
   margin-left:550px;
 }
 
-#add-created-account, #logout-button, #edit-button{
+#logout-button, #edit-button{
   margin-top: 45%;
-  /* margin-left: 60%; */
 }
+
+/* #add-created-account, #back-to-login-button{
+  background-color: blue;
+} */
 
 #edit-button{
   background-color: #000000;

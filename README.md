@@ -23,7 +23,7 @@ cooktime integer,
 preptime integer);
 ```
 
-#Users Schema
+# Users Schema
 ```
 CREATE TABLE users (
     id INTEGER PRIMARY KEY,
@@ -36,7 +36,7 @@ CREATE TABLE users (
 
 # REST endpoints
 Name | HTTP Method | Recipes Path | Sessions Path | Users Path
------|-------------|--------------| -------------
+-----|-------------|--------------| ------------- | -------
 Create | POST      |  /recipes    | /sessions | /users
 Delete | DELETE | http://localhost:8080/recipes/${recipe.id} | NONE | NONE
 Replace | PUT | http://localhost:8080/recipes/${recipe_id} | NONE | NONE
@@ -44,5 +44,5 @@ Retrieve | GET | http://localhost:8080/recipes/${recipe.id} | http://localhost:8
 List | GET | http://localhost:8080/recipes | NONE | NONE
 
 
-#Password Encryption Method
+# Password Encryption Method
 Bcrypt
