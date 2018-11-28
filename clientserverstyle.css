@@ -1,0 +1,150 @@
+body{
+  font-family: Comic Sans MS;
+  border: 10px;
+  background-color: #f49e42;
+  overflow: visible;
+}
+
+#heading{
+  font-size: 45px;
+  color: #000000;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#add-button, #login-button, #create-account-button, #add-created-account, #back-button, #logout-button{
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+/* center buttons */
+#add-created-account, #login-button{
+  margin-left:550px;
+}
+
+#add-created-account, #logout-button, #edit-button{
+  margin-top: 45%;
+  /* margin-left: 60%; */
+}
+
+#edit-button{
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 25px;
+  margin-left: 150px;
+}
+
+#newUser-button{
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 25px;
+  margin-left: 150px;
+}
+
+#my-list{
+  font-size: 20px;
+  color: #000000;
+  list-style-type: none;
+  word-wrap: break-word;
+  float: left;
+  width: 600px;
+}
+#create-form{
+  display:none;
+}
+
+.recipeInput, .editRecipeInput{
+  position: absolute;
+  margin-left: 60%;
+  width: 500px;
+}
+
+#name-field, #cooktime-field, #preptime-field, #edit-name-field, #edit-cooktime-field, #edit-preptime-field{
+  height:25px;
+  width:200px;
+}
+
+#ingredients-field, #instructions-field, #edit-ingredients-field, #edit-instructions-field{
+  height:100px;
+  width:200px;
+}
+
+#existing-email-field, #existing-password-field, #new-email-field, #new-password-field, #new-fname-field, #new-lname-field{
+  height: 35px;
+  width: 75%;
+  font-size: 23px;
+  margin-left:160px;
+}
+
+#move{
+  margin-left: 160px;
+}
+
+#edit-form{
+  display:none;
+}
+
+/* #login-form{
+  display:block;
+} */
+
+#createUser-form{
+  display:none;
+}
+
+#start-update{
+  /* display:inline;
+  padding-right: 100px;
+  padding-top: 200px; */
+  float:left;
+  width: 600px;
+  display:block;
+}
+
+#recipeslabel{
+  line-height: 0px;
+  font-size: 30px;
+  display: block;
+  float:left;
+}
+
+#style-utensils{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+
+h2{
+  font-size: 20px;
+} 
+
+h3{
+  font-size: 30px;
+  text-align: center;
+}
+
+#together{
+  display:inline;
+}
+
+/* bcrypt defaults */

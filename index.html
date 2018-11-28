@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 4: Authentication </title>
+    <link rel="stylesheet" href="clientserverstyle.css">
+  </head>
+  <body>
+    <div class = "title-container">
+      <img src ="utensilsUpdated.png" alt="titlebar" id="style-utensils" style:"width:100%">
+    </div>
+    <br>
+    <div id="create-form">
+      <h3 id="recipeslabel"> Recipes: </h3>
+      <ul id="my-list">
+      </ul>
+      <div class = "recipeInput">
+        <h2> Recipe name: </h2>
+        <input type="text" id="name-field">
+        <h2> Ingredients: </h2>
+        <textarea rows="8" columns="10" id="ingredients-field"></textarea>
+        <h2> Instructions: </h2>
+        <textarea rows="8" columns="10" id="instructions-field"></textarea>
+        <h2> Cook Time (in minutes): </h2>
+        <input type="text" id="cooktime-field">
+        <h2> Prep Time (in minutes): </h2>
+        <input type="text" id="preptime-field">
+      </div>
+      <br>
+      <button id="add-button">Add Recipe</button>
+      <button id="logout-button">Back to Login</button>
+    </div>
+    <br>
+    <div id="edit-form">
+        <h2 id="recipeslabel"> Recipes: </h2>
+        <h2 id="start-update"> Updating Recipe List... please wait </h2>
+      <div class = "editRecipeInput">
+        <h2> Recipe name: </h2>
+        <input type="text" id="edit-name-field">
+        <h2> Ingredients: </h2>
+        <textarea rows="8" columns="10" id="edit-ingredients-field"></textarea>
+        <h2> Instructions: </h2>
+        <textarea rows="8" columns="10" id="edit-instructions-field"></textarea>
+        <h2> Cook Time (in minutes): </h2>
+        <input type="text" id="edit-cooktime-field">
+        <h2> Prep Time (in minutes): </h2>
+        <input type="text" id="edit-preptime-field">
+      </div>
+      <br>
+      <button id="edit-button">Save Recipe</button>
+    </div>
+    <br>
+    <div id="login-form">
+      <div class = "loginForm">
+        <h3 id="loginlabel"> Login </h3>
+        <h2 id="move"> Email: </h2>
+        <input type="text" id="existing-email-field">
+        <h2 id="move"> Password: </h2>
+        <input type="text" id="existing-password-field">
+        <br>
+        <button id="login-button">Login</button>
+        <button id = "create-account-button">Create Account</button>
+      </div>
+      <br>
+    </div>
+    <br>
+    <div id="createUser-form">
+      <div class = "container">
+        <h3 id="createUser-label"> Create Account </h3>
+        <!-- <ul id="my-list">
+        </ul> -->
+        <h2 id="move"> Email: </h2>
+        <input type="text" id="new-email-field">
+        <h2 id="move"> Password: </h2>
+        <input type="text" id="new-password-field">
+        <h2 id="move"> First Name: </h2>
+        <input type="text" id="new-fname-field">
+        <h2 id="move"> Last Name: </h2>
+        <input type="text" id="new-lname-field">
+      </div>
+      <br>
+      <button id="add-created-account">Add User</button>
+      <button id="logout-button">Back to login page</button>
+    </div>
+    <script src="myclient.js"></script>
+  </body>
+</html>
